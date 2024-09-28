@@ -24,7 +24,7 @@ def fetch_news_sentiment(tickers: str, limit=50, topics=None, sort="LATEST"):
     data = response.json()
 
     if "feed" in data:
-        save_data(data["feed"], tickers)
+        # save_data(data["feed"], tickers)
         return data["feed"]
     else:
         raise ValueError("Failed to fetch news sentiment data. Check API Key or parameters.")

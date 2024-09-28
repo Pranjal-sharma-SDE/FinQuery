@@ -17,7 +17,7 @@ def fetch_stock_data(symbol: str, interval: str = "5min"):
     time_series_key = f"Time Series ({interval})"
     if time_series_key in data:
         stock_data = pd.DataFrame.from_dict(data[time_series_key], orient='index')
-        save_stock_data(stock_data, symbol, interval)
+        # save_stock_data(stock_data, symbol, interval)
         return stock_data
     else:
         raise ValueError("Failed to fetch data. Check API Key or symbol.")
@@ -38,7 +38,7 @@ def fetch_top_gainers_losers():
     if "top_gainers" in data and "top_losers" in data:
         gainers = pd.DataFrame(data["top_gainers"])
         losers = pd.DataFrame(data["top_losers"])
-        save_gainers_losers(gainers, losers)
+        # save_gainers_losers(gainers, losers)
         return gainers, losers
     else:
         raise ValueError("Failed to fetch gainers and losers.")

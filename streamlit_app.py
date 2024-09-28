@@ -5,6 +5,7 @@ from sentiment_analysis import fetch_news_sentiment, extract_relevant_topics, sa
 from data_fetcher import fetch_stock_data, fetch_top_gainers_losers
 from fpdf import FPDF
 import base64
+import requests
 
 DATA_DIR = "/data"
 

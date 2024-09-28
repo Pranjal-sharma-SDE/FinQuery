@@ -123,6 +123,10 @@ sources:
 
    ![News Sentiment Analysis](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727539536/Final_finquery_se74ka.jpg)
 
+   ![video](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727541660/ezgif-3-abdccfd5e1_iyxwov.gif)
+
+   ![video](https://res-console.cloudinary.com/dqhyudo4x/thumbnails/v1/image/upload/v1727541816/ZXpnaWYtMy1kZjllYzRkMzM1X3JqZHlubQ==/drilldown)
+
    ![FinQuery](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727541266/ezgif-3-498ec7a521_eylnuw.gif)
   
 
@@ -175,12 +179,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Developed by Pranjal Sharma, with contributions in finance, data science, and backend development.
 
-Feel free to connect on [LinkedIn](https://www.linkedin.com/in/pranjal-sharma-93b4a01a4/) or email me at yourname@example.com for further queries.
+Feel free to connect on [LinkedIn](https://www.linkedin.com/in/pranjal-sharma-93b4a01a4/) or email me at pranjal.iitr.mt@gmail.com for further queries.
 
 ---
 
 ## Acknowledgements
 
-- Thanks to **Pathway** for the RAG framework and **Alpha Vantage** for providing the stock and sentiment data.
+- Thanks to **Pathway** [Pathway](https://pathway.com/) for the RAG framework and **Alpha Vantage** [Alpha Vantage](https://www.alphavantage.co/) for providing the stock and sentiment data.
 
 ---

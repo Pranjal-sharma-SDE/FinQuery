@@ -7,15 +7,66 @@ from fpdf import FPDF
 import base64
 import requests
 
-DATA_DIR = "/app/data"
+# Set page configuration
+st.set_page_config(page_title="FinQuery", layout="wide")
+
+# Custom CSS for styling
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f0f2f5;
+    }
+    .title {
+        color: #2a9d8f;
+        text-align: center;
+        margin-top: -30px;
+    }
+    .sidebar .sidebar-content {
+        background-color: #264653;
+        color: white;
+    }
+    .stButton>button {
+        background-color: #e9c46a;
+        color: black;
+    }
+    .stSelectbox>div>div {
+        background-color: #264653;
+        color: white;
+    }
+    .stMultiSelect>div>div {
+        background-color: #264653;
+        color: white;
+    }
+    .stTextInput>div>input {
+        background-color: #264653;
+        color: white;
+    }
+    .logo {
+        text-align: right;
+        margin-top: 20px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+DATA_DIR = "/data"
 
 # Ensure the data directory exists
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
 
-# Streamlit app title and logo
-st.image("https://res.cloudinary.com/dqhyudo4x/image/upload/v1727527200/Gemini_Generated_Image_9gcau79gcau79gca_utq1rr.jpg", use_column_width=True)
-st.title("📈 FinQuery: Stock Data & News Sentiment Dashboard - Developed by Pranjal Sharma at IIT Roorkee")
+# Logo and title
+st.markdown(
+    """
+    <div class="logo">
+        <img src="https://res.cloudinary.com/dqhyudo4x/image/upload/v1727527200/Gemini_Generated_Image_9gcau79gcau79gca_utq1rr.jpg" style="width: 50px; height: 50px;"/>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+st.title("FinQuery - by Pranjal Sharma")
 
 # Sidebar for symbol input
 st.sidebar.header("Input Options")

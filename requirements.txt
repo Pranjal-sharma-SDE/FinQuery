@@ -8,3 +8,4 @@ Sentence-transformers
 streamlit
 requests
 PyYAML
+fpdf2

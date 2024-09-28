@@ -1,11 +1,12 @@
 import streamlit as st
 import os
 import pandas as pd
-from sentiment_analysis import fetch_news_sentiment
+from sentiment_analysis import fetch_news_sentiment, extract_relevant_topics, save_to_pdf
 from data_fetcher import fetch_stock_data, fetch_top_gainers_losers
-import requests
+from fpdf import FPDF
+import base64
 
-DATA_DIR = "/app/data"
+DATA_DIR = "/data"
 
 # Ensure the data directory exists
 if not os.path.exists(DATA_DIR):
@@ -40,6 +41,15 @@ st.sidebar.subheader("Stock Data Options")
 stock_options = st.sidebar.multiselect("Choose options:", 
                                       ["Stock Data", "News Sentiment", "Top Gainers/Losers", "Compare Multiple Stocks"])
 
+# PDF variable to store the generated PDF path
+pdf_file_path = ""
+
+# Function to read the PDF file and convert it to base64
+def get_pdf_base64(file_path):
+    with open(file_path, "rb") as pdf_file:
+        pdf_bytes = pdf_file.read()
+        return base64.b64encode(pdf_bytes).decode('utf-8')
+
 # Fetch stock data for multiple symbols
 if "Stock Data" in stock_options:
     if st.sidebar.button("Fetch Stock Data"):
@@ -58,7 +68,21 @@ if "News Sentiment" in stock_options:
             for sym in symbols:
                 news_data = fetch_news_sentiment(sym.strip())
                 st.subheader(f"News Sentiment for {sym.strip()}")
-                st.write(pd.DataFrame(news_data))
+                df = pd.DataFrame(news_data)
+                st.write(df)
+
+                # Generate and display PDF
+                relevant_data = extract_relevant_topics(news_data)  # Adjust to your relevant data extraction
+                pdf_file_path = os.path.join(DATA_DIR, f"relevant_news_sentiment_{sym.strip()}.pdf")
+                save_to_pdf(relevant_data, pdf_file_path, sym.strip())
+                
+                # Display PDF in Streamlit
+                pdf_base64 = get_pdf_base64(pdf_file_path)
+                pdf_link = f'<iframe src="data:application/pdf;base64,{pdf_base64}" width="700" height="600"></iframe>'
+                st.markdown(pdf_link, unsafe_allow_html=True)
+
+                st.download_button("Download PDF", pdf_file_path, file_name=os.path.basename(pdf_file_path), mime='application/pdf')
+
         except ValueError as e:
             st.error(e)
 

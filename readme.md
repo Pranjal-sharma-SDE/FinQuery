@@ -125,7 +125,7 @@ sources:
 
    ![video](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727541660/ezgif-3-abdccfd5e1_iyxwov.gif)
 
-   ![video](https://res-console.cloudinary.com/dqhyudo4x/thumbnails/v1/image/upload/v1727541816/ZXpnaWYtMy1kZjllYzRkMzM1X3JqZHlubQ==/drilldown)
+   ![video](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727544264/ezgif-2-3210cf2b21_lk8z0u.gif)
 
    ![FinQuery](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727541266/ezgif-3-498ec7a521_eylnuw.gif)
   

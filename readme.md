@@ -95,6 +95,10 @@ sources:
     path: "/data"
 ```
 
+## 
+
+![FinQuery](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727541266/ezgif-3-498ec7a521_eylnuw.gif)
+
 ---
 
 ## Features and Functionalities

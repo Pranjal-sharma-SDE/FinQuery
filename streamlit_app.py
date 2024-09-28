@@ -10,48 +10,8 @@ import requests
 # Set page configuration
 st.set_page_config(page_title="FinQuery", layout="wide")
 
-# Custom CSS for styling
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #f0f2f5;
-    }
-    .title {
-        color: #2a9d8f;
-        text-align: center;
-        margin-top: -30px;
-    }
-    .sidebar .sidebar-content {
-        background-color: #264653;
-        color: white;
-    }
-    .stButton>button {
-        background-color: #e9c46a;
-        color: black;
-    }
-    .stSelectbox>div>div {
-        background-color: #264653;
-        color: white;
-    }
-    .stMultiSelect>div>div {
-        background-color: #264653;
-        color: white;
-    }
-    .stTextInput>div>input {
-        background-color: #264653;
-        color: white;
-    }
-    .logo {
-        text-align: right;
-        margin-top: 20px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
-DATA_DIR = "/data"
+DATA_DIR = "/app/data"
 
 # Ensure the data directory exists
 if not os.path.exists(DATA_DIR):

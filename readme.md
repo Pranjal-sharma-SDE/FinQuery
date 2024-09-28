@@ -98,6 +98,10 @@ sources:
 ## 
 ![video](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727543327/ezgif-6-d74243468f_zxoj5i.gif)
 
+---
+## Architecture
+
+![Architecture](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727547202/archetecture_avnf2k.jpg)
 
 ---
 

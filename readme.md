@@ -96,8 +96,8 @@ sources:
 ```
 
 ## 
+![video](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727543327/ezgif-6-d74243468f_zxoj5i.gif)
 
-![FinQuery](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727541266/ezgif-3-498ec7a521_eylnuw.gif)
 
 ---
 
@@ -108,6 +108,9 @@ sources:
    - Adjustable time intervals (1min, 5min, 15min, 60min).
 
    ![Fetch Timeseries data](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727539537/Timeserires_frc6ul.jpg)
+
+   ![video](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727542252/ezgif-6-21b2e04604_espzdq.gif)
+
 
 2. **News Sentiment Analysis**:
    - Pull recent news articles based on stock symbols.
@@ -120,10 +123,15 @@ sources:
 
    ![News Sentiment Analysis](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727539536/Final_finquery_se74ka.jpg)
 
+   ![FinQuery](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727541266/ezgif-3-498ec7a521_eylnuw.gif)
+  
+
 3. **Top Gainers/Losers**:
    - Display top-performing stocks based on real-time data.
 
    ![Top Gainers/Losers](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727539537/Top_gainers_yv2diz.jpg)
+
+   ![video](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727541816/ezgif-3-df9ec4d335_rjdynm.gif)
 
    ![Top Losers](https://res.cloudinary.com/dqhyudo4x/image/upload/v1727539537/top_loss_loxaux.jpg)
 
